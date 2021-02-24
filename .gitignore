@@ -102,7 +102,7 @@ dist
 
 
 # config api token
-config.js
+.config
 
 # TernJS port file
 .tern-port
