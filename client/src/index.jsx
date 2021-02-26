@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './components/app';
 
-// import style here or in the app.jsx?
+// import style here or in the app.jsx? n
 
 // const App = () => {
 //   return (
