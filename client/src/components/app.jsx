@@ -1,7 +1,9 @@
 import React from 'react';
 
+require('../css/mystyles.scss');
+
 const App = () => (
-  <h1>This is our React App</h1>
+  <span className="is-primary">This is our React App</span>
 );
 
 export default App;
