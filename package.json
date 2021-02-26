@@ -1,0 +1,58 @@
+{
+  "name": "fec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "puppeteer": "^7.1.0",
+    "react": "^17.0.1",
+    "react-bulma-components": "^3.4.0",
+    "react-dom": "^17.0.1",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/preset-react": "^7.12.13",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^5.0.2",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^5.2.0",
+    "jest": "^26.6.3",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jverploeg/fec.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jverploeg/fec/issues"
+  },
+  "homepage": "https://github.com/jverploeg/fec#readme"
+}
