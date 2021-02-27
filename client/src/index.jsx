@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import App from './components/app';
 
-// require('./css/mystyles.scss');
+require('./css/mystyles.scss');
 
 // import style here or in the app.jsx? n
 
