@@ -4,18 +4,24 @@ import bulma from 'bulma';
 // COMPONENT
 const ProductOverview = (props) => (
   <div>
-    <button type="button" className="button is-primary">TEST BUTTON</button>
-    <section className="hero is-primary is-fullheight">
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title">Hello, Jack!</h1>
-          <h2 className="subtitle">This is Product Overview</h2>
+    <section className="hero is-grey-dark is-fullheight">
+      <div className="tile is-ancestor">
+        <div className="tile is-vertical">
+          <div className="tile is-parent">
+            <div className="tile is-8 is-child box">
+              <p className="title">Image</p>
+            </div>
+            <div className="tile is-child box">
+              <p className="title">Description</p>
+            </div>
+          </div>
+          <div className="tile is-parent is-vertical is-12 box">
+            <p className="title">Details</p>
+          </div>
         </div>
       </div>
     </section>
-    <div className="tile is-grey-dark">
-      <h3>TESTING</h3>
-    </div>
+    <section className="section space" />
   </div>
 );
 
