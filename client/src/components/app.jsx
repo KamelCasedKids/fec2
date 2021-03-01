@@ -1,7 +1,7 @@
 import React from 'react';
 import bulma from 'bulma';
 import RatingsReviews from './Ratings&Reviews';
-import ProductOverview from './ProductOverview';
+import ProductOverview from './overview/ProductOverview';
 import RelatedProducts from './RelatedProducts';
 
 require('../css/mystyles.scss');
