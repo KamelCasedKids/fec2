@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-// import bulma from 'bulma';
+import ProductOverview from './overview/ProductOverview';
 import RatingsReviews from './ratings/RatingsReviews';
-import ProductOverview from './ProductOverview';
 import RelatedProducts from './RelatedProducts';
 
 // require('../css/mystyles.scss');
