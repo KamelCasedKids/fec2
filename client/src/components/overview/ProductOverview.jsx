@@ -2,6 +2,7 @@ import React from 'react';
 import bulma from 'bulma';
 import Image from './Image';
 import Details from './details';
+import Description from './description';
 
 // COMPONENT
 const ProductOverview = (props) => (
@@ -14,17 +15,14 @@ const ProductOverview = (props) => (
               <div className="tile is-parent is-7">
                 <Image />
               </div>
-              <div className="tile is-parent is-vertical">
-                <Details />
-                <article className="tile is-child box">
-                  Shopping Cart Options
-                </article>
+              <div className="tile is-parent">
+                <div className="tile is-child box">
+                  <Details />
+                </div>
               </div>
             </div>
             <div className="tile is-parent">
-              <article className="tile is-child box">
-                Product Description
-              </article>
+              <Description />
             </div>
           </div>
         </div>

@@ -12,18 +12,45 @@ class Details extends React.Component {
   render() {
     return (
       <div>
-        <div className="tile is-child box">
-          <div className="column star">
-            Ratings and Reviews
+        <div className="column star">
+          Ratings and Reviews
+        </div>
+        <div className="column details">
+          Product Name
+        </div>
+        <div className="column price">
+          Price
+        </div>
+        <div className="column styles">
+          Style
+          <div className="columns">
+            <div className="column">[x]</div>
+            <div className="column">[ ]</div>
+            <div className="column">[ ]</div>
+            <div className="column">[ ]</div>
           </div>
-          <div className="column details">
-            Product Name
+          <div className="columns">
+            <div className="column">[ ]</div>
+            <div className="column">[ ]</div>
+            <div className="column">[ ]</div>
+            <div className="column">[ ]</div>
           </div>
-          <div className="column price">
-            price
+        </div>
+        <div className="columns">
+          <div className="column is-two-thirds size">
+            Select Size
           </div>
-          <div className="column styles">
-            stylesGrid
+          <div className="column quantity">
+            Quantity
+          </div>
+        </div>
+
+        <div className="columns">
+          <div className="column is-three-quarters cart">
+            Add to Bag +
+          </div>
+          <div className="column favorite">
+            Star
           </div>
         </div>
       </div>

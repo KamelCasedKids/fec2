@@ -6,9 +6,9 @@ class Image extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <img className="tile is-child" src="https://bulma.io/images/placeholders/640x480.png" alt="" />
-      </div>
+      </React.Fragment>
     )
   }
 };
