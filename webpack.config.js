@@ -7,6 +7,10 @@ module.exports = {
   mode: 'development',
   // the app entry point is /src/index.js
   entry: path.resolve(__dirname, 'client', 'src', 'index.jsx'),
+  // externals: {
+  //   react: 'commonjs react',
+  //   'react-dom': 'commonjs react-dom',
+  // },
   output: {
   // the output of the webpack build will be in /dist directory
     path: path.resolve(__dirname, 'client', 'dist'),
@@ -47,6 +51,9 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      react: path.resolve(__dirname, './node_modules/react'),
+    },
     extensions: ['.js', '.jsx'],
   },
   // add a custom index.html as the template

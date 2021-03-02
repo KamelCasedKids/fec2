@@ -28,6 +28,31 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+// Change Ratings & Reviews Styling
+// input[type="radio"] {
+//   display: none;
+// }
+.star-rating {
+  input[type="radio"] {
+    display: none;
+  }
+}
+.overall-star-rating {
+  display: inline-block;
+  position: relative;
+  font-size: 100px;
+  color: #ddd;
+}
+.overall-star-rating:after {
+  font-family: FontAwesome;
+  content: "\f005";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #f80;
+}
 
 // Import only what you need from Bulma
 @import "~/node_modules/bulma/sass/utilities/_all.sass";
