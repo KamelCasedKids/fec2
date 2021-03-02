@@ -56,11 +56,11 @@ class Details extends React.Component {
           <div className="column is-two-thirds size">
             <div className="dropdown">
               <div className="dropdown-trigger">
-                <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <button className="button">
                   <span>Select Size</span>
                 </button>
               </div>
-              <div className="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div className="dropdown-menu">
                 <div className="dropdown-content">
                   <div className="dropdown-content">
                     <a className="dropdown-item">
@@ -84,16 +84,16 @@ class Details extends React.Component {
             </div>
           </div>
           <div className="column quantity">
-            Quantity
+            <button>Quantity</button>
           </div>
         </div>
 
         <div className="columns">
           <div className="column is-three-quarters cart">
-            Add to Bag +
+            <button>Add to Bag +</button>
           </div>
           <div className="column favorite">
-            Star
+            <button>Star</button>
           </div>
         </div>
       </div>
