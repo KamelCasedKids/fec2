@@ -102,7 +102,7 @@ dist
 
 
 # config api token
-.server/helpers/config.js
+atlier-config.js
 
 # TernJS port file
 .tern-port
