@@ -12,7 +12,7 @@ const ProductOverview = (props) => (
         <div className="tile is-ancestor has-text-centered">
           <div className="tile is-vertical">
             <div className="tile">
-              <div className="tile is-parent is-7">
+              <div className="tile is-parent">
                 <Image />
               </div>
               <div className="tile is-parent">

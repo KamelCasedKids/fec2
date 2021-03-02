@@ -31,6 +31,8 @@ $input-shadow: none;
 //container offset
 $gap: 72px;
 $container-offset: (2 * $gap);
+// tile-spacing
+$tile-spacing: 0;
 
 
 // Import only what you need from Bulma
@@ -48,3 +50,5 @@ $container-offset: (2 * $gap);
 @import "~/node_modules/bulma/sass/grid/columns.sass";
 @import "~/node_modules/bulma/sass/grid/tiles.sass";
 @import "~/node_modules/bulma/sass/elements/box.sass";
+@import "~/node_modules/bulma/sass/components/menu.sass";
+@import "~/node_modules/bulma/sass/components/dropdown.sass";

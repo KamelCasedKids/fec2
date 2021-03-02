@@ -24,21 +24,64 @@ class Details extends React.Component {
         <div className="column styles">
           Style
           <div className="columns">
-            <div className="column">[x]</div>
-            <div className="column">[ ]</div>
-            <div className="column">[ ]</div>
-            <div className="column">[ ]</div>
+            <div className="column">
+              <button className="button is-rounded is-link">X</button>
+            </div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
           </div>
           <div className="columns">
-            <div className="column">[ ]</div>
-            <div className="column">[ ]</div>
-            <div className="column">[ ]</div>
-            <div className="column">[ ]</div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
+            <div className="column">
+              <button className="button is-rounded is-link" />
+            </div>
           </div>
         </div>
         <div className="columns">
           <div className="column is-two-thirds size">
-            Select Size
+            <div className="dropdown">
+              <div className="dropdown-trigger">
+                <button className="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                  <span>Select Size</span>
+                </button>
+              </div>
+              <div className="dropdown-menu" id="dropdown-menu2" role="menu">
+                <div className="dropdown-content">
+                  <div className="dropdown-content">
+                    <a className="dropdown-item">
+                      XS
+                    </a>
+                    <a className="dropdown-item">
+                      S
+                    </a>
+                    <a className="dropdown-item">
+                      M
+                    </a>
+                    <a className="dropdown-item">
+                      L
+                    </a>
+                    <a className="dropdown-item">
+                      XL
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="column quantity">
             Quantity
