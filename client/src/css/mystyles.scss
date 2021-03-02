@@ -28,6 +28,10 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+//container offset
+$gap: 72px;
+$container-offset: (2 * $gap);
+
 
 // Import only what you need from Bulma
 @import "~/node_modules/bulma/sass/utilities/_all.sass";
