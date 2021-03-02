@@ -8,12 +8,12 @@ const getAllReviewsByProduct = (productID, cb) => {
   const url = `https://app-hrsei-api.herokuapp.com/api/fec2/hr-bld/reviews/?product_id=${productID}&count=100`;
   const options = {
     headers: {
-      Authorization: config.key
+      'Authorization': config.key
     }
   };
   axios.get(url, options)
     .then((res) => {
-      console.log('res.data.results', res.data.results);
+      console.log('res.data.results:', res.data.results);
       store2.set(reviews, { productID: res.data.results });
       // store2.set(`allReviews${productID}`, res.data);
     })

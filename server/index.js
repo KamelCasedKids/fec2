@@ -32,7 +32,7 @@ app.listen(port, () => {
 app.get('/api/reviews/all/:id', (req, res, next) => {
   const productID = req.params.id;
 
-  atlier.getAllReviewsByProduct(req.params)
+  atlier.getAllReviewsByProduct(productID)
     .then(() => {
       res.clearCookie('allReviews');
       res.
