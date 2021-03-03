@@ -1,28 +1,32 @@
 // IMPORTS
 const axios = require('axios');
 const store2 = require('store2');
-const config = require('./config');
+const config = require('../../atlier-config.js');
 
-// ATELIER API HELPER FUNCTIONS
+// ATLIER API HELPER FUNCTIONS
 const getAllReviewsByProduct = (productID, cb) => {
-  const url = `https://app-hrsei-api.herokuapp.com/api/fec2/hr-bld/reviews/?product_id=${productID}&count=100`;
+  const url = `https://app-hrsei-api.herokuapp.com/api/fec2/${config.campus}/reviews/?product_id=${productID}&count=100`;
   const options = {
     headers: {
-      Authorization: config.key
+      'Authorization': config.key
     }
   };
   axios.get(url, options)
-    .then((res) => {
-      console.log('res.data.results', res.data.results);
-      store2.set(reviews, { productID: res.data.results });
-      // store2.set(`allReviews${productID}`, res.data);
+    .catch((err) => {
+      console.log('err: ', err);
+      return cb(err, null);
     })
-    .catch((err) => (
-      cb(err, null)
-    ))
-    .then((res) => (
-      cb(null, res.data)
-    ));
+    .then((res) => {
+      // console.log('res.data.results:', res.data.results);
+      // store2.set('reviews', { `${productID}`: res.data.results });
+      store2.set(`allReviews${productID}`, res.data.results, true);
+      return res;
+    })
+    .then((res) => {
+      // console.log('res:', res.data);
+      console.log(store2.getAll());
+      return cb(null, res.data);
+    });
 };
 
 // const getNewestTwoReviewsByProduct = (productID, )
