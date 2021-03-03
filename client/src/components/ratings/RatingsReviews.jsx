@@ -22,7 +22,7 @@ const RatingsReviews = () => {
 
   return (
     <div className="RatingsReviews">
-      <button type="button" className="button is-primary">
+      <button type="button" className="button is-black" onClick={(e) => { console.log('hello'); }}>
         TEST BUTTON
       </button>
       <section className="hero is-primary is-fullheight">

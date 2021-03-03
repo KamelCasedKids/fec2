@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ProductOverview from './overview/ProductOverview';
 import RatingsReviews from './ratings/RatingsReviews';
-import RelatedProducts from './RelatedProducts';
+import RelatedProducts from './products/RelatedProducts';
 
 // require('../css/mystyles.scss');
 
