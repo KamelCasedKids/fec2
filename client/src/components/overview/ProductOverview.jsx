@@ -1,5 +1,4 @@
 import React from 'react';
-import bulma from 'bulma';
 import Image from './Image';
 import Details from './details';
 import Description from './description';

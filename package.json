@@ -52,6 +52,23 @@
     "react": ">=17.0.1",
     "react-dom": ">=17.0.1"
   },
+  "jest": {
+    "setupFilesAfterEnv": ["./setupTest.js"],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared",
+      "client"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "<rootDir>/__mocks__/fileMock.js"
+    }
+  },
   "scripts": {
     "start": "webpack serve",
     "start2": "node ./server/index.js",

@@ -230,8 +230,7 @@ const RelatedProducts = (props) => {
           </div>
       </div>
   )
-}
-
+};
 
 // EXPORTS
 export default RelatedProducts;
