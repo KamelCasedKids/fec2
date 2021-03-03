@@ -17,6 +17,8 @@
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.13.5",
     "@babel/preset-react": "^7.12.13",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
@@ -56,6 +58,9 @@
     "build": "webpack",
     "watch": "webpack -w",
     "test": "jest"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./test/setupTest.js"]
   },
   "repository": {
     "type": "git",
