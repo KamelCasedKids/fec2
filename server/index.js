@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const atlier = require('./helpers/apiHelpers');
+const atlier = require('./helpers/atlier');
 
 // initialize app
 const app = express();
@@ -20,7 +20,7 @@ app.use(express.json());
 // routes
 
 // set port
-const port = 8080;
+const port = 8081;
 
 // connect server
 app.listen(port, () => {
@@ -29,12 +29,14 @@ app.listen(port, () => {
 });
 
 // API ROUTES
-app.get('/api/reviews/all/:id', (req, res, next) => {
+app.get('/api/reviews/all/:id', (req, res) => {
   const productID = req.params.id;
 
-  atlier.getAllReviewsByProduct(productID)
-    .then(() => {
-      res.clearCookie('allReviews');
-      res.
-    })
+  atlier.getAllReviewsByProduct(productID, (err, results) => {
+    if (err) {
+      res.status(400).send(err);
+    } else {
+      res.status(200).send(results);
+    }
+  });
 });
