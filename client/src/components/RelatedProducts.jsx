@@ -1,5 +1,4 @@
 import React from 'react';
-import bulma from 'bulma';
 
 // COMPONENT
 const RelatedProducts = (props) => {
@@ -230,8 +229,7 @@ const RelatedProducts = (props) => {
           </div>
       </div>
   )
-}
-
+};
 
 // EXPORTS
 export default RelatedProducts;
