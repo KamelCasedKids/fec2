@@ -1,5 +1,5 @@
 import React from 'react';
-import bulma from 'bulma';
+//import bulma from 'bulma';
 
 // COMPONENT
 const RelatedProducts = (props) => {
